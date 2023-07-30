@@ -1,0 +1,818 @@
+body,
+button {
+    font-family: 'Manrope', sans-serif;
+}
+
+.container{
+    max-width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+button,
+.header__logo h3,
+h1 {
+    font-family: 'Mulish', sans-serif;
+}
+
+section h2 {
+    font-size: 38px;
+    font-weight: 600;
+    text-align: center;
+}
+
+section p {
+    font-size: 18px;
+}
+
+.section-subtitle {
+    font-size: 16px;
+    color: #F3BA9B;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.section-triangle{
+    clip-path: polygon(50% 100%, 100% 70%, 100% 100%, 0 100%, 0 70%);
+    height: 140px;
+    margin-top: -139px;
+}
+
+/* Шапка */
+.header {
+    position: absolute;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-top: 33px;
+    padding-bottom: 40px;
+    right: 0;
+    left: 0;
+   
+    margin: auto;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-right: 44px;
+}
+
+.header__logo h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.header__navigation ul {
+    display: flex;
+    list-style: none;
+    gap: 52px;
+    font-size: 13px;
+    font-weight:400;
+    letter-spacing: 1.2px;
+    white-space: nowrap;
+}
+
+.header__navigation li:nth-last-child(1) {
+    margin-left: 5px;
+}
+
+.header__contacts {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
+
+.header__contacts p {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.header .contacts-phone{
+ padding-right: 5px;
+}
+
+.header .contacts-phone p {
+    font-size: 26px;
+    font-weight: 400;
+    white-space: nowrap;
+    letter-spacing: 1.2px;
+}
+
+.header__contacts button {
+    margin-left: 10px;
+   
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+    font-weight: 400;
+    width: 222px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 9px 54px 13px 54px;
+ 
+    border: none;
+    background: transparent;
+    background-image: url("./img/icons/btn-gradient.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+/* Первый блок с краткой информацией  */
+
+.hero{
+    background-image: url("./img/hero_bg.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.hero .container {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    padding-top: 193px;
+    padding-bottom: 73px;
+}
+
+.job-title {
+    width: 286px;
+    height: 18px;
+    font-size: 16px;
+    background: transparent;
+    background-image: url("./img/icons/job-title_gradient.svg");
+    white-space: nowrap;
+    background-repeat: no-repeat;
+    padding: 12px 69px 14px 45px;
+    letter-spacing: 1px;
+    background-size: contain;
+    margin: 0;
+}
+
+.hero__description h1 {
+    font-size: 56px;
+    letter-spacing: -0.4px;
+    margin-top: 19px;
+    margin-bottom:22px;
+    margin-left: 3px;
+    width: 740px;
+}
+
+.hero__description ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0px;
+    margin-bottom: 34px;
+}
+
+.hero__description ul li {
+    font-size: 18px;
+    letter-spacing: -0.1px;
+    background-image: url("./img/icons/list_icon.png");
+    background-repeat: no-repeat;
+    line-height: 30px;
+    padding-left: 48px;
+    white-space: nowrap;
+}
+
+.hero__description button {
+    color: white;
+    font-size: 22px;
+    letter-spacing: 0.2px;
+    padding: 27px 50px 27px 49px;
+    background: rgb(224, 186, 165);
+    background: linear-gradient(90deg, rgba(224, 186, 165, 1) 0%, rgba(203, 146, 115, 1) 100%);
+    border: none;
+    border-bottom: 2px solid #AC8772;
+    border-radius: 10px;
+}
+.hero__achievements{
+    margin-top: -16px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hero__achievements .achievement {
+    background-image: url("./img/hero-achievement_bg.png");
+    background-size: cover;
+    padding: 24px 27px 22px 33px;
+    max-width: 140px;
+    border-radius: 16px;
+}
+
+.achievement__text{
+    font-size: 12px;
+    margin-top: 0px;
+    line-height: 18px;
+}
+
+.hero__achievements .achievement strong {
+    font-size: 36px;
+    font-weight: 400;
+   
+}
+
+.hero__achievements .achievement__heading {
+    font-size: 16px;
+    margin-top: 20px;
+    letter-spacing: 1.6px;
+    margin-left: 6px;
+    margin-bottom: 6px
+}
+
+/* Блок с основными услугами */
+.services-triangle{
+    background: #F0F1F4;
+}
+
+.services h2,
+.services__text {
+    text-align: center;
+}
+
+.services {
+    background: #F0F1F4;
+    padding-top: 81px;
+    padding-bottom: 129px;
+}
+
+.services .section-triangle{
+    background-color: #F0F1F4;
+}
+
+.services h2{
+    margin-top:0px;
+    margin-bottom: 0px;
+}
+
+.services__text {
+    max-width: 730px;
+    letter-spacing: -0.1px;
+    line-height: 30px;
+    margin-top: 7px;
+    margin-bottom: 55px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services__items {
+    margin-top: 0px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    column-gap: 40px;
+    justify-content: center;
+}
+
+.services__item {
+    background: white;
+    background-repeat: no-repeat;
+    background-position-y: 35px;
+    background-position-x: calc(100% - 31px);
+    padding: 13px 118px 38px 50px;
+    border-radius: 18px;
+    width: 392px;
+}
+
+.services__item h3 {
+    font-size: 25px;
+    max-width: 371px;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+
+.services__item p {
+    font-size: 16px;
+    max-width: 392px;
+    line-height: 29px;
+    margin-bottom: 18px;
+    min-height: 87px;
+}
+
+.services__item button,
+.services__item-price {
+    display: inline;
+}
+
+.services__item button {
+    color: white;
+    background: rgb(236, 216, 205);
+    background: linear-gradient(90deg, rgba(236, 216, 205, 1) 0%, rgba(216, 174, 151, 1) 100%);
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 51px 13px 50px;
+    margin-right: 33px;
+  
+}
+
+.services__item .services__item-price {
+   
+    font-weight: 600;
+    margin-bottom: 40px;
+    font-size: 21px ;
+}
+
+.services__item:nth-child(1) {
+    background-image: url("./img/icons/service_item-icon_1.png");
+}
+
+.services__item:nth-child(2) {
+    background-image: url("./img/icons/service_item-icon_2.png");
+}
+
+.services__item:nth-child(3) {
+    background-image: url("./img/icons/service_item-icon_3.png");
+}
+
+.services__item:nth-child(4) {
+    background-image: url("./img/icons/service_item-icon_4.png");
+}
+
+/* Блок с услугами аудита */
+.audit-triangle{
+    background: #fff;
+}
+
+.audit {
+    padding-top: 126px;
+    padding-bottom: 166px;
+}
+
+.audit .section-subtitle{
+    margin-bottom: 10px;
+}
+
+.audit h2 {
+    max-width: 620px;
+    margin-top: 0px;
+    margin-bottom: 54px;
+    line-height: 40px;
+    font-size: 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.audit__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.audit__item {
+    max-width: 552px;
+    border-radius: 10px;
+    padding: 4px;
+    padding-top: 4px;
+    background: rgb(236, 216, 205);
+    background: linear-gradient(90deg, rgba(236, 216, 205, 1) 0%, rgba(216, 174, 151, 1) 100%);
+}
+
+.audit__item p {
+    font-size: 16px;
+    width: 300px;
+    line-height: 28px;
+    letter-spacing: 0.1px;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 21px;
+}
+
+.audit__item h3 {
+    font-size: 32px;
+    margin: 0px;
+    margin-top: 6px;
+    white-space: nowrap;
+}
+
+.audit__item-wrapper {
+    border-radius: 6px;
+    background: white;
+    padding: 56px 200px 71px 56px;
+}
+
+.audit__item:nth-child(1) .audit__item-wrapper {
+    background-image: url("./img/audit_item-bg_1.png");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.audit__item:nth-child(2) .audit__item-wrapper {
+    background-image: url("./img/audit_item-bg_2.png");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.audit__item button {
+    color: white;
+    background: rgb(236, 216, 205);
+    background: linear-gradient(90deg, rgba(236, 216, 205, 1) 0%, rgba(216, 174, 151, 1) 100%);
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 18px 87px 17px 85px;
+    margin-right: 38px;
+}
+
+/* Блок с подробной информацией о Татьяне */
+.profile-triangle{
+    background: linear-gradient(90deg,#28262A 0%,#1C191F 100%);
+    margin-bottom: -1px;
+}
+
+.profile {
+    color: white;
+    padding-top: 102px;
+    padding-bottom: 104px;
+    background-image: url("./img/profile_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile__biography {
+    display: flex;
+    padding-right: 25px;
+    justify-content: center;
+    gap: 75px;
+    margin-bottom: 107px;
+}
+
+.profile__biography img{
+    position: relative;
+   
+    object-fit: scale-down;
+    margin-bottom: 19px;
+}
+
+.profile__biography div{
+    max-width: 640px;
+    
+}
+
+.profile__biography h2 {
+    text-align: left;
+    white-space: nowrap;
+    font-size: 42px;
+    margin-top: 21px;
+    margin-bottom: 0px;
+}
+
+.profile__biography-text{
+    line-height: 32px;
+    margin-top: 14px;
+    letter-spacing: -0.1px;
+}
+
+.profile__biography ul {
+    display: flex;
+    
+    flex-direction: column;
+    padding-left: 0px;
+    list-style: none;
+    gap: 19px;
+    margin-top: 23px;
+}
+
+.profile__biography li {
+    font-size: 18px;
+    letter-spacing: -0.1px;
+    background-image: url("./img/icons/list_icon.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-y: center;
+    padding-left: 52px;
+    line-height: 32px;
+}
+
+.profile__features {
+    display: flex;
+    justify-content: center;
+    gap: 39px;
+    margin-bottom: 50px;
+}
+
+.profile__feature {
+    font-size: 20px;
+    padding-left: 31px;
+    padding-bottom: 32px;
+    padding-right: 30px;
+    background: #343237;
+}
+
+.profile__feature img {
+    margin-top: -19px;
+    margin-left: -5px;
+}
+
+.profile__feature p {
+    margin-top: 8px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    margin-bottom: 0;
+    width: 200px;
+}
+
+.profile__work-principles {
+    display: flex;
+    padding-right: 50px;
+    padding-bottom: 40px;
+    justify-content: center;
+    gap: 92px;
+    background-image: url("./img/signature.png");
+    background-repeat: no-repeat;
+    background-position-x: calc(100% + 40px);
+    background-position-y: bottom;
+}
+
+.profile__work-principles div {
+    max-width: 508px;
+}
+
+.profile__work-principles h3 {
+    font-size: 38px;
+    letter-spacing: 0.7px;
+    font-weight: 400;
+    white-space: nowrap;
+    margin-bottom: 23px;
+}
+
+.profile__work-principles ul {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 19px;
+}
+
+.profile__work-principles p,
+.profile__work-principles ul li {
+    line-height: 32px;
+    letter-spacing: -0.2px;
+}
+
+/* Блок с отзывами */
+.reviews-triangle{
+    background: #FCF9F8;
+}
+
+.reviews {
+    background: #FCF9F8;
+    padding-top: 95px;
+    padding-bottom: 98px;
+}
+
+.reviews .section-subtitle{
+    margin-bottom: 0px;
+}
+
+.reviews h2 {
+    margin-top: 8px;
+    margin-bottom: 60px;
+}
+
+.reviews-list img {
+    border-radius: 8px;
+}
+
+.reviews__clients img {
+    margin-bottom: -30px;
+}
+
+.reviews-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 57px;
+    margin-bottom: 35px;
+}
+
+.reviews__clients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 89px;
+}
+
+/* Блок с алгоритмом работы */
+.work-process-triangle{
+    background: #F0F1F4;
+    margin-bottom: -1px;
+}
+
+.work-process {
+    background: #F0F1F4;
+    padding-top: 60px;
+    padding-bottom: 102px;
+}
+
+.work-process h2 {
+    margin-top: 19px;
+    margin-bottom: 0px;
+}
+
+.work-process__text {
+    margin-top: 10px;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 55px;
+}
+
+.work-process__steps {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   
+}
+
+.work-process__step {
+    min-width: 300px;
+    max-width: 300px;
+}
+
+.work-process .step-number {
+    font-size: 46px;
+    color: #E2C3B2;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    background-image: url("./img/icons/work-process__step-bg.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.work-process__step h3 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 32px;
+    margin-bottom: 17px;
+}
+
+.work-process__step p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 260px;
+    margin-top: 0px;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+/* Блок с новостями и публикациями */
+.news-triangle{
+    background: #FCF9F8;
+}
+
+.news-feed {
+    background: #FCF9F8;
+    padding-top: 100px;
+    padding-bottom: 110px;
+}
+.news-feed .section-subtitle{
+    margin-bottom: 8px;
+}
+
+.news-feed h2 {
+    margin-top: 0px;
+    margin-bottom: 60px;
+}
+
+.news-feed__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+/* подвал */
+
+.footer {
+    background: #151218;
+    padding-top: 51px;
+    padding-bottom: 50px;
+}
+
+.footer__wrapper {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-right: 61px;
+}
+
+.footer__logo h3 {
+    font-family: 'Mulish', sans-serif;
+    font-size: 19px;
+    margin-top: 16px;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    max-width: 100px;
+}
+
+.footer__navigation ul {
+    display: flex;
+    list-style: none;
+    gap: 53px;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+
+.footer__navigation li:nth-last-child(1) {
+    margin-left: 7px;
+}
+
+.footer__contacts {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    margin-right: 5px;
+}
+
+.footer__contacts p {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    margin-top: 0px;
+}
+
+.contacts-phone{
+    margin-bottom:7px;
+    margin-right: -6px;
+}
+
+.contacts-phone p {
+    font-size: 26px;
+    font-weight: 400;
+    white-space: nowrap;
+    letter-spacing: 1.2px;
+    margin-bottom: 4px;
+}
+
+.footer__contacts button {
+    margin-left: 10px;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+    font-weight: 400;
+    width: 222px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 9px 54px 13px 54px;
+ 
+    border: none;
+    background: transparent;
+    background-image: url("./img/icons/btn-gradient.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+
+.footer__privacy-policy {
+    letter-spacing: 0.5px;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer__wrapper{
+    margin-bottom:27px;
+}
