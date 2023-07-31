@@ -274,24 +274,81 @@
 
 
 @media only screen and (max-width: 600px) {
+
+    .container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+
+    .header__logo img{
+        width: 50px;
+    }
+
+    .header,
+    .footer__wrapper {
+        flex-wrap: wrap;
+    }
+
     .header {
         flex-wrap: wrap-reverse;
         justify-content: center;
     }
 
-    .footer__wrapper {
-        flex-wrap: wrap;
-        min-width: 380px;
-    }
-
-    .header__contacts {
-        gap: 20px;
-        flex-direction: row-reverse;
-        margin-bottom: 20px;
-
+    .header .container{
+        width: auto;
     }
 
     .hero .container {
         padding-top: 220px;
+    }
+
+    .hero__description{
+        width: calc(100vw - 20px);
+    }
+
+    .hero__description h1{
+        white-space: normal !important;
+        font-size: 24px;
+        width: calc(100%);
+        text-align: center;
+    }
+
+    .hero__description ul li{
+        white-space:normal;
+    }
+
+    .services__item{
+        min-width: 240px;
+        padding-bottom: 28px;
+       
+    }
+
+    .services__item h3{
+        font-size: 17px;
+        max-width: 80%;
+    }
+    .services__item button{
+        margin-bottom: 10px;
+    }
+
+    .audit__item p{
+        width: unset;
+    }
+
+    .profile__biography img{
+        width: 80vw;
+    }
+
+    .profile__biography h2{
+        white-space: normal;
+    }
+
+    .profile__biography li{
+        background-size: 25px;
+    }
+
+    .news-feed__item img{
+        width: 80vw;
     }
 }
